@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="game-box" style="width: 720px;height: 420px;">
+        <canvas id="canvas" width="720" height="420"></canvas>
+        <button class="btn">Start Game</button>
+    </div>
+    <script src="./js/Game.js"></script>
+    <script src="./js/GameMenu.js"></script>
+    <script src="./js/GameView.js"></script>
+    <script src="./js/GameMap.js"></script>
+    <script src="./js/GameRole.js"></script>
+    <script src="./js/GameTime.js"></script>
+    <script src="./js/GameOver.js"></script>
+    <script src="./js/GameStop.js"></script>
+
+    <script>
+        let game = new Game();
+        document.querySelector('.game-box>.btn').onclick = function(){
+            game.start();
+        }
+    </script>
+</body>
+</html>
